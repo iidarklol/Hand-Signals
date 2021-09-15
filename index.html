@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <center>
+        <h1 class="btn-primary btn" style="color: black; width: 40%; font-size: 30px;">Hand Signals<br> </h1>
+        <br> <br>
+        <h3 style="color:indianred;">Make Any of the given Hand signals </h3>
+        <h2 style="color: black;">👌 │ ✌ │ 👍 │ ✋ │ 🤞 │ 👊 │ ✊</h2>
+        
+
+        <div id="webcamHold" class="col-xs-10 col-lg-4 col-sm-4 col-md-4">
+            <label id="WCL" style="color:orangered ;">Webcam View - </label>
+            <div id="Webcam"></div>
+            <br>
+            <button class="btn btn-warning" onclick="Capture()">Capture Image</button>
+        </div>
+
+        <div id="prediction"  class="col-xs-10 col-lg-4 col-sm-4 col-md-4">
+            <label style="color:orangered ;" >Hand Signal - </label>
+             <h2 id="HS"></h2>
+        </div>
+            <div id="webcamHold" class="col-xs-10 col-lg-4 col-sm-4 col-md-4">
+            <label id="WCL" style="color:orangered ;">Snapshot View - </label>
+            <div id="Pic"></div>
+            <br>
+            <button class="btn btn-success" onclick="Identify()">Identify Emotion</button>
+    </center>
+   
+</body>
+</html>
